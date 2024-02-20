@@ -15,9 +15,10 @@ st.set_page_config( page_title="Automated EDA App", layout="wide")
 #st.markdown(hide_default_format, unsafe_allow_html=True)
 import pandas as pd
 import numpy as np
+import matplotlib
 import matplotlib.pyplot as plt
 import seaborn as sns
-import matplotlib
+
 matplotlib.use("Agg")
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.title("Automatic EDA and Plot generator for Datasets")
