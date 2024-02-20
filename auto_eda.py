@@ -17,7 +17,7 @@ from PIL import Image
 im = Image.open('business-analytics-icon-data-analysis-illustration-sign-data-science-symbol-profit-graph-logo-vector.jpg')
 
 st.set_page_config( page_title="Automated EDA App",page_icon = im, layout="wide")
-#st.markdown(hide_default_format, unsafe_allow_html=True)
+st.markdown(hide_default_format, unsafe_allow_html=True)
 
 
 matplotlib.use("Agg")
