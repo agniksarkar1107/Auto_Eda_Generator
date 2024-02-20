@@ -3,4 +3,5 @@ pandas
 numpy
 seaborn
 matplotlib
+matplotlib_pyplot
 pillow
