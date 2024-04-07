@@ -11,11 +11,6 @@ hide_default_format = """
        footer {visibility: hidden;}
        </style>
        """
-hide_github_icon = """
-#GithubIcon {
-  visibility: hidden;
-}
-"""
 
 from PIL import Image
 
@@ -23,7 +18,7 @@ im = Image.open('business-analytics-icon-data-analysis-illustration-sign-data-sc
 
 st.set_page_config( page_title="Automated EDA App",page_icon = im, layout="wide")
 st.markdown(hide_default_format, unsafe_allow_html=True)
-st.markdown(hide_github_icon, unsafe_allow_html=True)
+
 
 
 matplotlib.use("Agg")
