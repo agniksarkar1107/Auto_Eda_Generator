@@ -35,6 +35,7 @@ def main():
         if data is not None:
             df=pd.read_csv(data)
             st.dataframe(df.head())
+            all_columns = df.columns.to_list()
         if st.checkbox("Show Shape"):
             st.write(df.shape)
         if st.checkbox("Show Describe"):
