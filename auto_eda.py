@@ -48,12 +48,7 @@ def main():
             st.dataframe(new_df)
         if st.checkbox("Show Value Counts"):
             st.write(df.iloc[:, -1].value_counts())
-        if st.checkbox("Correlation Matrix"):
-            plt.matshow(df.corr())
-            st.pyplot()
-        if st.checkbox("Correlation Matrix(Seaborn)"):
-            st.write(sns.heatmap(df.corr(), annot=True))
-            st.pyplot()
+        
     elif choices == 'PLOTS':
         st.subheader("Data Visualization")
         data=st.file_uploader("Upload a dataset", type=["csv", "txt", "xlsx"])
